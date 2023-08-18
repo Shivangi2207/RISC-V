@@ -115,6 +115,19 @@ gcc sum1ton.c
 
 ## Lab 2: RISCV GCC compile And Disassemble
 
+## commands  
+```
+riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+
+
+```
+To list the details of the file
+```
+ls -ltr sum1ton.o
+```
+![Screenshot from 2023-08-19 02-14-51](https://github.com/Shivangi2207/RISC-V/assets/140998647/f2efcafc-4b9d-41ba-802e-d318c902aefe)
+
+
 
 </details>
 </details>
