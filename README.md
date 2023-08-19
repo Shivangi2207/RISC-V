@@ -460,3 +460,15 @@ firmware32.hex file
 </details>
 
 </details>
+
+## Day 3
+<details><summary><strong>Digital Logic with TL-Verilog and Makerchip</strong></summary>
+<details><summary><strong>Combinational logic in TL-Verilog using Makerchip </strong></summary>
+
+
+</details>
+
+
+</details>
+
+
