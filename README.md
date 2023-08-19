@@ -282,6 +282,10 @@ output:
 
 ## What is ABI?
 
+
+<details><summary><strong>Application Binary interface (ABI)
+</strong></summary>
+
 An Application Binary Interface (ABI) is a set of rules and conventions that dictate how different software components interact with each other at the binary level. It defines the interface between software components, such as different programs, libraries, and the operating system, to ensure compatibility and proper communication. ABIs are particularly important in the context of compiled programming languages, as they provide the standards for how functions are called, parameters are passed, memory is allocated, and data is represented in binary format.
 Key aspects of an ABI may include:
 
@@ -296,5 +300,163 @@ Key aspects of an ABI may include:
   5.  Exception Handling: Outlines how exceptions, errors, and signals are managed and propagated between different parts of the software.
 
   6.  System Calls and Libraries: Specifies the interface between user-level programs and the operating system. It covers how system calls are made and how programs interact with shared libraries.
+
+
+![Screenshot from 2023-08-19 16-58-19](https://github.com/Shivangi2207/RISC-V/assets/140998647/88a05989-3062-4617-8481-79d272d84674)
+
+
+
+ The application program can directly access the registers of the RISC V architecture using something known as system calls. The ABI (also known as system call interface enables the application to access the hardware resources via registers.
+
+ In RISC V architecture, the width of the register is defined as XLEN. For RV64 and RV32, the widths are 64 bits and 32 bits, respectively.
+
+  RISC V belongs to the little endian memory addressing system, which means that the least significant byte of a word is stored in the smallest memory address.
+
+
+## Memory Allocation For Double Words
+
+In the RISC-V architecture, memory allocation is not directly governed by the ABI (Application Binary Interface) itself. Instead, the ABI defines the conventions for function calling, register usage, and data representation between different software components. Memory allocation and deallocation are typically managed using memory management functions provided by the operating system or programming language runtime.
+
+The way an ABI accesses registers depends on the specific calling convention and architecture being used. Different architectures and ABIs may have variations in how registers are used to pass function arguments, return values, and hold temporary data. 
+
+Now, how does the ABI access the hardware resources?
+
+1. The ABI defines which registers are used for function arguments, return values, and temporary storage. Hardware registers are allocated and managed according to these rules to facilitate efficient data exchange between functions.
+2. The ABI defines memory alignment requirements for data types. Hardware ensures that data is stored and accessed efficiently in memory by enforcing these alignment rules.
+3. The ABI's calling conventions and function parameter passing depend on the instruction set architecture. Hardware interprets these instructions and encodings to perform operations specified by the ABI.
+4. When interacting with the operating system, the ABI's system call conventions are implemented using hardware interrupts and privileged execution modes to transition from user mode to kernel mode.
+
+![Screenshot from 2023-08-19 17-08-06](https://github.com/Shivangi2207/RISC-V/assets/140998647/21de863d-a0b3-46cb-9abc-92ae4af60f5a)
+
+Here we have 64 bit register but we have 32 bit wide register available for storage of our 64 bit instruction.
+So 1st we divide 64 bits into eight 8 bit and store it into a paricular memory location.
+Hence , In the context of RISC-V, a "word" typically refers to a 32-bit value, and a "byte" is 8 bits. The splitting of a 64-bit number into bytes and words is straightforward:
+
+A 64-bit number consists of 8 bytes (64 bits / 8 bits per byte).
+ A 64-bit number consists of 2 words (64 bits / 32 bits per word).
+
+Each byte or word of the 64-bit number can be accessed and manipulated independently.
+
+Keep in mind that RISC-V provides specific instructions for working with 64-bit data, including arithmetic, load/store, and conversion operations. These instructions handle the splitting and management of 64-bit data in a 32-bit architecture like RISC-V.
+
+  It uses different registers(32 in number) which are each of width XLEN = 32 bit for RV32 (~XLEN = 64 for RV64) . On a higher level of abstraction these registers are accessed by their respective ABI names.
+
+ For base integer instructions there are broadly 3 types of of such registers:
+        I-type : For instructions having immediate values as operands.
+        R-type : For instructions having only registers as operands.
+        S-type : For instructions used for storing operations.
+
+## LOAD, ADD and STORE Instructions
+
+```
+ld x8, 16(x23)
+```
+Here ld is for load instruction, x8 is for destination register, 16 is offset and x23 is source register.
+This is  I type instruction.
+
+![Screenshot from 2023-08-19 22-18-50](https://github.com/Shivangi2207/RISC-V/assets/140998647/a034039c-388e-4133-a1a8-bc1533418ac8)
+
+
+```
+add x8, x24,x8
+```
+Here add is for add instruction, x8 is the destination register, x23 & x8 is the source register.This is R type Instructions 
+
+![Screenshot from 2023-08-19 22-24-34](https://github.com/Shivangi2207/RISC-V/assets/140998647/b7a34439-63cb-47e9-9626-00ff88834ba5)
+
+```
+sd x8,8(x23)
+```
+Here sd is for store doubleword,x8 is data registers,8 tell offset,x23 is source register. This is S type Instructions
+
+![Screenshot from 2023-08-19 22-30-03](https://github.com/Shivangi2207/RISC-V/assets/140998647/f65b968e-3916-4137-9cce-500ebd52bc81)
+
+
+Here in each Instructions set we can see register are of 5 bits so total number of register = 2^5 = 32 registers
+
+## 32-registers And Their Respective ABI Names 
+
+![Screenshot from 2023-08-19 19-54-21](https://github.com/Shivangi2207/RISC-V/assets/140998647/7cefd5c5-1554-41e4-b279-863481cead24)
+
+
+</details>
+
+<details><summary><strong>Lab work using ABI function calls </strong></summary>
+
+## Study New Algorithm For Sum 1 to N Using ASM
+
+![Screenshot from 2023-08-19 19-58-25](https://github.com/Shivangi2207/RISC-V/assets/140998647/453c547e-136f-4822-83d9-3c7184a30a23)
+
+Now let's understand the algorithm behind the sum 1 to N program using ASM
+Here first initialized a4 register with zero for storing temp variable.Similarly we initialized a3 with zero.Then after that we are storing 10 in a2 register. After that we are entering in a loop which says if value in a2>a3 then do a increment of +1 in a3  and add a3 in a4 (a4=a3+a4) .if its not true then print a0=a4+0
+
+
+## Code for lab work
+C program
+
+```
+#include<stdio.h>
+
+extern int load(int x,int y);
+int main(){
+
+	int result=0;
+	int count =9;
+	result=load(0x0,count+1);
+	printf("sum of number from 1 to %d\n",count,result);
+
+}
+```
+Code of load file
+```
+.section .text
+.global load
+.type load,@function
+
+load:
+	add a4, a0, zero
+	add a2, a0, a1
+	add a3, a0, zero
+loop:	add a4, a3, a4
+	addi a3, a3, 1
+	blt a3, a2, loop
+	add a0, a4,zero
+	ret
+
+```
+
+![Screenshot from 2023-08-19 22-49-18](https://github.com/Shivangi2207/RISC-V/assets/140998647/27173a6c-2a9d-409c-80b4-1cafcbe4aef5)
+
+Memory Location of load Subroutine
+
+![Screenshot from 2023-08-19 22-56-05](https://github.com/Shivangi2207/RISC-V/assets/140998647/515a3ff9-9099-45c4-8da8-952c25d0c767)
+
+Spike debugging :
+
+![Screenshot from 2023-08-19 23-03-15](https://github.com/Shivangi2207/RISC-V/assets/140998647/7e01302f-5706-4b36-84ee-96c2ddfe2fb3)
+
+## Lab To Run C-Program On RISC-V CPU 
+![Screenshot from 2023-08-19 21-39-50](https://github.com/Shivangi2207/RISC-V/assets/140998647/d7ae71df-6700-4bfc-bc65-9afa8fca672b)
+
+Here we have riscv cpu program code through which we send the HEX format file of c program to show output the output of the given code
+
+```
+chmod 777 rv32im.sh
+./rv32im.sh 
+
+```
+![Screenshot from 2023-08-19 23-07-48](https://github.com/Shivangi2207/RISC-V/assets/140998647/6a30c124-2156-4374-a4c3-3405e0189bf6)
+
+
+Input hex file to sent through verilog code:
+
+firmware.hex file
+![Screenshot from 2023-08-19 23-09-33](https://github.com/Shivangi2207/RISC-V/assets/140998647/e375a0bb-5446-4f5e-996f-484997ff8a65)
+
+firmware32.hex file
+
+![Screenshot from 2023-08-19 23-10-06](https://github.com/Shivangi2207/RISC-V/assets/140998647/5a834ba3-693d-47cd-b613-7665cf557fda)
+
+</details>
 
 </details>
