@@ -275,3 +275,26 @@ output:
 
 </details>
 </details>
+
+## Day 2
+
+<details><summary><strong>Introduction to ABI and basic verification flow</strong></summary>
+
+## What is ABI?
+
+An Application Binary Interface (ABI) is a set of rules and conventions that dictate how different software components interact with each other at the binary level. It defines the interface between software components, such as different programs, libraries, and the operating system, to ensure compatibility and proper communication. ABIs are particularly important in the context of compiled programming languages, as they provide the standards for how functions are called, parameters are passed, memory is allocated, and data is represented in binary format.
+Key aspects of an ABI may include:
+
+   1. Calling Conventions: Specifies how functions are called and how parameters are passed between the caller and callee. This includes the order in which parameters are pushed onto the stack or placed in registers, as well as how return values are retrieved.
+
+  2.  Data Representation: Defines how different data types are represented in memory or registers. This covers integer, floating-point, and pointer data types.
+
+  3.  Memory Layout: Specifies how memory is allocated, managed, and used by programs. It includes rules for stack frames, heap allocation, and data storage.
+
+  4. Register Usage: Describes how registers are used for passing function arguments and return values, as well as which registers need to be preserved by callee functions.
+
+  5.  Exception Handling: Outlines how exceptions, errors, and signals are managed and propagated between different parts of the software.
+
+  6.  System Calls and Libraries: Specifies the interface between user-level programs and the operating system. It covers how system calls are made and how programs interact with shared libraries.
+
+</details>
