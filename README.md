@@ -538,7 +538,7 @@ However, please note that there might have been developments or changes to Maker
 </details>
 
 <details>
-<summary><strong>Sequntial logic</strong></summary>
+<summary><strong>Sequential logic</strong></summary>
 ## What is sequential circuit?
 
 A sequential circuit is a type of digital electronic circuit in which the output depends not only on the current input values but also on the previous history of inputs and the internal state of the circuit. Unlike combinational circuits, which produce outputs solely based on input values, sequential circuits have memory elements (such as flip-flops) that allow them to store and remember past input values or internal states.
@@ -568,12 +568,39 @@ Sequential circuits are used for tasks that involve memory and sequencing, such 
 
 </details>
 
-<details>
-<summmary><strong>Pipeline Logic</strong></summmary>
 
+<details><summmary><strong>Pipeline Logic</strong></summmary>
 
- 
+## What is pipeline?
+
+ Pipelining is a technique used in digital circuit design to improve the performance of a sequential process. In a pipeline, a complex task or operation is divided into a sequence of smaller stages. Each stage processes a part of the task, and the outputs of one stage are passed as inputs to the next stage. This allows multiple tasks to be in progress at different stages simultaneously, improving throughput and overall efficiency.
+
+Now let's implement pythagorous theorem and compute  it on hardware
+
+![Screenshot from 2023-08-20 15-06-32](https://github.com/Shivangi2207/RISC-V/assets/140998647/53ab4774-0a09-4f00-8209-bc213e82321b)
+
+Let us compute the pythagoran's theorem over 3 cycles.
+
+Cycle1: Squaring on the sides a and b.
+ Cycle2: Adding the sqyared vales of a and b.
+ Cycle3: Finding the square root value of the sum
+
+## Makerchip implementation
+
+![Screenshot from 2023-08-20 15-11-18](https://github.com/Shivangi2207/RISC-V/assets/140998647/91afe442-6246-46fc-9415-cd30002a4c5a)
+
+ Code reduction is the most advanatageous property of the TL-Verilog when compared to System Verilog. 
+
+ The Retiming property in TL-Verilog is very easy and safe to implement whereas in SystemVerilog, it is very bug-prone.
+
+The pipelinig also allows us to run the clock at a high frequency. Regardless of the way we structure our logic, we will be able to produce new set of inputs on every clock edge. As a result, we get high throughput for our circuit.
+
+## syntax in Tl-Verilog
+
+ ![Screenshot from 2023-08-20 13-27-16](https://github.com/Shivangi2207/RISC-V/assets/140998647/2986c5d0-905d-47cf-b1a8-d1adb1dc9ecf)
+
 </details>
+
 
 </details>
 
