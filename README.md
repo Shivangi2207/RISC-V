@@ -567,9 +567,7 @@ Sequential circuits are used for tasks that involve memory and sequencing, such 
 
 
 </details>
-<details>
-<summmary><strong> Pipeline Logic </strong></summmary>
-
+<details><summary><strong>Pipeline Logic</strong></summary>
 ## What is pipeline?
 
  Pipelining is a technique used in digital circuit design to improve the performance of a sequential process. In a pipeline, a complex task or operation is divided into a sequence of smaller stages. Each stage processes a part of the task, and the outputs of one stage are passed as inputs to the next stage. This allows multiple tasks to be in progress at different stages simultaneously, improving throughput and overall efficiency.
@@ -616,9 +614,89 @@ Pipeline structure:
 ![Screenshot from 2023-08-20 15-42-59](https://github.com/Shivangi2207/RISC-V/assets/140998647/e2fe6720-f561-430a-a39d-2c3441bf5643)
 
 Makerchip Implementation
+![Screenshot from 2023-08-20 16-21-23](https://github.com/Shivangi2207/RISC-V/assets/140998647/cac52711-21f8-430d-8d23-6c88673d8a5a)
+
+## Lab2 : Cycle Calculator:
+pipeline structure:
+
+![Screenshot from 2023-08-20 16-23-15](https://github.com/Shivangi2207/RISC-V/assets/140998647/e3b39a75-c0d2-4958-a9fb-79b10d5e1b6d)
+
+ Makerchip implementation:
+
+ ![Screenshot from 2023-08-20 16-39-25](https://github.com/Shivangi2207/RISC-V/assets/140998647/31e4f643-894e-4370-9830-92b6524fb300)
+
+
+</details>
+
+<details><summary><strong>Validity</strong></summary>
+"Validity" is a term often used in the context of designing communication interfaces or protocols. It typically refers to a signal that indicates whether the data present on another signal (usually a data signal) is valid and should be processed.
+
+Validity provided:
+
+ 1: easier debug
+ 2: cleaner design
+ 3: better error checking
+ 4:automated clock gating
+
+
+ ## Implementation of pythagoran's theorem with validity:
+
+ 
+ 
+![Screenshot from 2023-08-20 16-51-08](https://github.com/Shivangi2207/RISC-V/assets/140998647/f85062ab-35aa-4644-8a52-7d44750ab5d4)
+
+Clock Gating is a power-saving property.
+
+## Lab1 : Distance Accumulator with pythagorean's theorem:
+
+Pipeline structure:
+
+![Screenshot from 2023-08-20 17-05-35](https://github.com/Shivangi2207/RISC-V/assets/140998647/217a0e1a-55f7-41a6-aa47-4f42e9182609)
+
+Makerchhip Implementation:
+
+![Screenshot from 2023-08-20 18-05-09](https://github.com/Shivangi2207/RISC-V/assets/140998647/d8dd50fb-1f93-4d7c-8768-5c7a5eb52c78)
+
+## Lab2 : Cycle calculator with validity:
+
+pipeline structute:
+
+![Screenshot from 2023-08-20 18-07-06](https://github.com/Shivangi2207/RISC-V/assets/140998647/c3366353-69ad-412b-b8e7-935755bbc81a)
+
+Makerchip implementatiom:
+
+![Screenshot from 2023-08-20 18-09-06](https://github.com/Shivangi2207/RISC-V/assets/140998647/40f04672-543d-4705-b340-3ff00b774c1f)
+
+## Lab3 : Calculator with single value memory:
+
+![Screenshot from 2023-08-20 18-21-30](https://github.com/Shivangi2207/RISC-V/assets/140998647/e1a3acc0-4388-43fc-862b-dd197cad6617)
+
+
+</details>
+
+<details>
+	<summary><strong>Wrap up</strong></summary>
+
+## Hierarchy
+
+## Lab1 : Conway's game of life
+
+![Screenshot from 2023-08-20 18-15-20](https://github.com/Shivangi2207/RISC-V/assets/140998647/48b9a59c-d329-4e8b-9a73-956806ae8b0e)
+
+
+## Lab2 : Pythagoran's theorem
+
+Pipeline structure:
+![Screenshot from 2023-08-20 18-17-09](https://github.com/Shivangi2207/RISC-V/assets/140998647/635ab276-17c3-4c28-a1fe-fb74380cfd96)
+
+
+Makerchip Implementation:
+
+![Screenshot from 2023-08-20 18-16-07](https://github.com/Shivangi2207/RISC-V/assets/140998647/72343c4b-d972-40ab-bf0d-6dfe32a09857)
 
 
 
+ 
 </details>
 
 
