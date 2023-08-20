@@ -462,7 +462,7 @@ firmware32.hex file
 </details>
 
 ## Day 3
-<details><summary><strong>Digital Logic with TL-Verilog and Makerchip</strong></summary>
+<details><summary><strong>Digital Logic with TL-Verilog and Makerchip</strong></summary><br>
 <details><summary><strong>Combinational logic in TL-Verilog using Makerchip </strong></summary>
 
 ## Logic gates
@@ -702,4 +702,28 @@ Makerchip Implementation:
 
 </details>
 
+## Day 4
 
+<details><summary><strong>Basic RISC-V CPU micro-architecture
+</strong></summary>
+
+## Introduction to Simple RISC-V Micro-architecture 
+
+![Screenshot from 2023-08-20 18-30-24](https://github.com/Shivangi2207/RISC-V/assets/140998647/c4589d82-eecb-4ed3-875a-40441e20ab5d)
+
+A single-cycle microarchitecture for a RISC-V CPU is a simple and straightforward design in which each instruction is executed within a single clock cycle. While this approach is easy to understand, it has limitations in terms of performance and efficiency. Let's break down the key components of a single-cycle RISC-V CPU's microarchitecture:
+
+1:Instruction Fetch (IF): The instruction memory fetches the instruction based on the 
+
+2:Program counter (PC): The PC is updated to point to the next instruction.
+
+3:Instruction Decode (ID): The fetched instruction is decoded to identify the operation and operands.Register values are read from the register file based on the instruction's register operands.
+
+4:Execute (EX): The ALU (Arithmetic Logic Unit) performs the operation specified by the instruction.Immediate values are generated from the instruction for operations that require them.
+
+5:Memory Access (MEM): Memory operations (load and store) are performed if the instruction requires memory access. For loads, data is fetched from memory and made available for the next stage. For stores, data is written to memory.
+
+5:Write-Back (WB): The result of the instruction is written back to the destination register.
+
+
+</details>
