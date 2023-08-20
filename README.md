@@ -724,6 +724,106 @@ A single-cycle microarchitecture for a RISC-V CPU is a simple and straightforwar
 5:Memory Access (MEM): Memory operations (load and store) are performed if the instruction requires memory access. For loads, data is fetched from memory and made available for the next stage. For stores, data is written to memory.
 
 5:Write-Back (WB): The result of the instruction is written back to the destination register.
+</details>
 
+<details>
+<summary><strong>Fetch and decode</strong></summary> 
+
+## Lab1 : Next PC
+Pipeline structure:
+
+![Screenshot from 2023-08-20 18-57-55](https://github.com/Shivangi2207/backup/assets/140998647/5d11388e-b446-4bdd-b97e-ce5c06b0440d)
+
+Implementation:
+![Screenshot from 2023-08-20 19-01-45](https://github.com/Shivangi2207/backup/assets/140998647/550d19f3-40ee-45ae-aa71-245b63b8e90b)
+
+
+
+## Lab2 : Fetch logic
+
+Pipeline structure (part 1):
+![Screenshot from 2023-08-20 21-09-12](https://github.com/Shivangi2207/RISC-V/assets/140998647/d4f837f2-82b2-4253-b818-b336518e1476)
+
+Pipeline structure (part 2):
+
+![Screenshot from 2023-08-20 21-09-32](https://github.com/Shivangi2207/RISC-V/assets/140998647/3700e20f-e543-4c19-9d35-2c25b1d67bfe)
+
+
+Makerchip Implementation:
+
+![Screenshot from 2023-08-20 20-08-39](https://github.com/Shivangi2207/RISC-V/assets/140998647/65af2b67-1d70-43fa-8b02-8373334b40cf)
+
+## Lab3 : Instruction type decode
+
+Pipeline structure:
+
+![Screenshot from 2023-08-20 21-15-43](https://github.com/Shivangi2207/RISC-V/assets/140998647/58ec9bda-6754-4337-8a77-ded3442cd3de)
+
+Makerchip output:
+
+![Screenshot from 2023-08-20 21-30-18](https://github.com/Shivangi2207/RISC-V/assets/140998647/cf7b1d85-31ee-442b-b367-d03026a50198)
+
+## Lab4 : Instruction immediate decode
+
+![Screenshot from 2023-08-20 21-24-36](https://github.com/Shivangi2207/RISC-V/assets/140998647/e040c77e-3bf8-452a-916e-c42f3b38b780)
+
+Makerchip output:
+
+![Screenshot from 2023-08-20 21-30-36](https://github.com/Shivangi2207/RISC-V/assets/140998647/48fdc48e-5d2c-448d-b2ab-811f9c035ed6)
+
+## Lab5 : Instruction Decode
+
+![Screenshot from 2023-08-20 21-38-28](https://github.com/Shivangi2207/RISC-V/assets/140998647/520d2924-cfda-4ddd-9779-ffa88619f976)
+
+Makerchip output:
+
+![Screenshot from 2023-08-20 21-30-56](https://github.com/Shivangi2207/RISC-V/assets/140998647/6b08bebf-3938-41ec-84ed-2bec32cae7e4)
+
+## Lab6 : Instruction Field Decode:
+![Screenshot from 2023-08-20 21-38-28](https://github.com/Shivangi2207/RISC-V/assets/140998647/3aa09860-ea31-4f94-a6d7-cb30dd9405dc)
+
+Makerchip output:
+
+![Screenshot from 2023-08-20 21-41-40](https://github.com/Shivangi2207/RISC-V/assets/140998647/41305a3a-ba44-4a58-912f-e286f6f58cc6)
+
+## Lab7 : Instruction Decode_2
+
+![Screenshot from 2023-08-20 21-40-45](https://github.com/Shivangi2207/RISC-V/assets/140998647/61a5ae40-8803-4fb4-b45f-dbc0316f05bf)
+
+Makerchip output:
+
+![Screenshot from 2023-08-20 21-42-28](https://github.com/Shivangi2207/RISC-V/assets/140998647/c268a250-e8fc-4cde-828e-3ed13f646ad8)
+
+</details>
+
+<details><summary><strong>RISC-V Control Logic</strong></summary>
+
+## Lab1 : Register file read
+Pipeline structure:
+![Screenshot from 2023-08-20 21-59-23](https://github.com/Shivangi2207/RISC-V/assets/140998647/bb6d8153-9b7b-444c-bc76-f9c1b30cf097)
+
+Makerchip Implementation:
+
+![Screenshot from 2023-08-20 22-05-21](https://github.com/Shivangi2207/RISC-V/assets/140998647/0f770030-b163-4665-a201-3dea20163d35)
+
+
+## lab2 : Arithmetic and Logic unit(ALU)
+Pipeline structure:
+
+![Screenshot from 2023-08-20 22-12-40](https://github.com/Shivangi2207/RISC-V/assets/140998647/354573dc-fdf5-4300-b207-7444128fd37c)
+
+Makerchip Implementation
+
+![Screenshot from 2023-08-20 22-17-54](https://github.com/Shivangi2207/RISC-V/assets/140998647/7fd0d43c-9e3a-48fb-a621-de17d6f76488)
+
+## Lab3 : Register file write
+
+Pipeline structure:
+
+![Screenshot from 2023-08-20 22-12-40](https://github.com/Shivangi2207/RISC-V/assets/140998647/d2412f07-ffe3-43c1-b607-77d1a5929932)
+
+Makerchip Implementation
+
+![Screenshot from 2023-08-20 22-22-59](https://github.com/Shivangi2207/RISC-V/assets/140998647/23d81210-e835-4b26-a47b-5d1c4702b424)
 
 </details>
