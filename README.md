@@ -465,9 +465,115 @@ firmware32.hex file
 <details><summary><strong>Digital Logic with TL-Verilog and Makerchip</strong></summary>
 <details><summary><strong>Combinational logic in TL-Verilog using Makerchip </strong></summary>
 
+## Logic gates
+
+![Screenshot from 2023-08-19 23-27-04](https://github.com/Shivangi2207/RISC-V/assets/140998647/f1b8d0c0-98a0-41a2-b98b-d0e856acc44d)
+
+AND Gate: Outputs true if all inputs are true.
+OR Gate: Outputs true if at least one input is true.
+NOT Gate: Outputs the opposite (complement) of the input.
+XOR Gate: Outputs true if the number of true inputs is odd.
+NAND Gate: Outputs false only if all inputs are true.
+NOR Gate: Outputs true only if all inputs are false.
+XNOR Gate: Outputs true if the number of true inputs is even.
+
+![Screenshot from 2023-08-20 00-26-15](https://github.com/Shivangi2207/RISC-V/assets/140998647/759bc912-5716-46ef-9b6c-9069c4911db0)
+
+
+## Combinational Circuits
+
+![Screenshot from 2023-08-19 23-29-39](https://github.com/Shivangi2207/RISC-V/assets/140998647/6ff026cd-6e1c-4904-813a-b563f7b5fc93)
+
+Combinational circuits are digital electronic circuits where the outputs depend solely on the current input values and not on any previous inputs or internal states. These circuits use a combination of logic gates to perform specific logical functions without any memory or feedback elements. Combinational circuits are used for various purposes, such as arithmetic operations, data processing, and logic operations, where the output is determined only by the input conditions at that particular moment in time.
+
+## Mux
+
+A Multiplexer (MUX), also known as a data selector, is a digital circuit that selects and routes one of multiple input lines to a single output line based on the control signals. It's often depicted as having multiple data inputs, a control input (select lines), and a single output.
+ ![Screenshot from 2023-08-20 00-27-04](https://github.com/Shivangi2207/RISC-V/assets/140998647/94012bef-654e-4c6a-87b3-6283ab3d4c84)
+
+## Makerchip
+
+Makerchip is an online platform that provides an integrated development environment (IDE) for designing, simulating, and testing digital circuits and systems. It's particularly focused on hardware description languages (HDLs) like Verilog and SystemVerilog.
+
+Makerchip allows users to create, simulate, and debug digital designs using a web-based interface. It provides features such as code editing, simulation visualization, and waveform analysis. It's often used as a teaching and learning tool for digital design and hardware description languages.
+
+However, please note that there might have been developments or changes to Makerchip since then. I recommend checking their official website or other reliable sources for the most up-to-date information.
+
+
+## Lab works
+
+## inverter
+
+![Screenshot from 2023-08-20 00-44-24](https://github.com/Shivangi2207/RISC-V/assets/140998647/776716b3-5afe-4f61-ba70-ab5a91e1552a)
+
+## AND gate
+
+![Screenshot from 2023-08-20 00-46-02](https://github.com/Shivangi2207/RISC-V/assets/140998647/2001c43b-57f4-4174-83f0-d4985452a685)
+
+## OR gate
+![Screenshot from 2023-08-20 00-46-21](https://github.com/Shivangi2207/RISC-V/assets/140998647/adfce61a-4b34-410d-b3bf-7bed7a40d433)
+
+## Xor gate
+![Screenshot from 2023-08-20 00-46-45](https://github.com/Shivangi2207/RISC-V/assets/140998647/36f5b23b-fa51-44d9-acbc-199ac98025fa)
+
+## Vector
+
+![Screenshot from 2023-08-20 00-49-11](https://github.com/Shivangi2207/RISC-V/assets/140998647/cd48ff83-70df-4938-b499-fe2f838e6e09)
+
+## MUX
+
+![Screenshot from 2023-08-20 00-52-32](https://github.com/Shivangi2207/RISC-V/assets/140998647/c9ba6255-c2e2-46b5-a81b-1aded7f56247)
+![Screenshot from 2023-08-20 00-53-41](https://github.com/Shivangi2207/RISC-V/assets/140998647/34f15a26-91a7-410e-9a76-246a9b1a38a5)
+
+
+
+## Combinational calculator
+
+![Screenshot from 2023-08-20 12-31-00](https://github.com/Shivangi2207/RISC-V/assets/140998647/7b8f51e6-c87c-4633-b7d8-72c0fde25b77)
+
+
+
+
 
 </details>
 
+<details>
+<summary><strong>Sequntial logic</strong></summary>
+## What is sequential circuit?
+
+A sequential circuit is a type of digital electronic circuit in which the output depends not only on the current input values but also on the previous history of inputs and the internal state of the circuit. Unlike combinational circuits, which produce outputs solely based on input values, sequential circuits have memory elements (such as flip-flops) that allow them to store and remember past input values or internal states.
+
+Sequential circuits are used for tasks that involve memory and sequencing, such as counters, registers, and finite state machines. They are fundamental in designing systems that require controlled and ordered behavior over time. The behavior of sequential circuits is defined by a combination of their present input values, the previous state, and transition rules that determine how the internal state changes in response to inputs.
+
+
+
+![Screenshot from 2023-08-20 01-32-11](https://github.com/Shivangi2207/RISC-V/assets/140998647/fbd8d615-c13f-4b97-8a10-b6a5609bec77)
+
+## Lab work
+
+## Fibonacci series
+
+
+![Screenshot from 2023-08-20 14-15-16](https://github.com/Shivangi2207/RISC-V/assets/140998647/ce6ca185-dfd7-46ce-8053-c7c7be4cdf3f)
+
+## Counter
+
+![Screenshot from 2023-08-20 14-18-19](https://github.com/Shivangi2207/RISC-V/assets/140998647/c41b769d-c443-4d48-ab7d-cf7b72195b2a)
+
+## Sequential Calculator
+
+
+ ![Screenshot from 2023-08-20 12-37-44](https://github.com/Shivangi2207/RISC-V/assets/140998647/29f9ed75-575f-4f23-9bb4-31a2c250b607)
+
+
+</details>
+
+<details>
+<summmary><strong>Pipeline Logic</strong></summmary>
+
+
+ 
+</details>
 
 </details>
 
