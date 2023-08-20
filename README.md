@@ -567,9 +567,8 @@ Sequential circuits are used for tasks that involve memory and sequencing, such 
 
 
 </details>
-
-
-<details><summmary><strong>Pipeline Logic</strong></summmary>
+<details>
+<summmary><strong> Pipeline Logic </strong></summmary>
 
 ## What is pipeline?
 
@@ -598,6 +597,27 @@ The pipelinig also allows us to run the clock at a high frequency. Regardless of
 ## syntax in Tl-Verilog
 
  ![Screenshot from 2023-08-20 13-27-16](https://github.com/Shivangi2207/RISC-V/assets/140998647/2986c5d0-905d-47cf-b1a8-d1adb1dc9ecf)
+
+## Implementation of Fibonacci series in a pipeline:
+
+![Screenshot from 2023-08-20 15-38-11](https://github.com/Shivangi2207/RISC-V/assets/140998647/054b5cb7-123f-4637-8548-aaa17907e8c8)
+
+## Implementation of pipeline through TL-Verilog:
+
+![Screenshot from 2023-08-20 15-40-12](https://github.com/Shivangi2207/RISC-V/assets/140998647/4590d788-e40c-44e2-a972-937840b3ccf1)
+
+we can observe errors in the pipeline
+![Screenshot from 2023-08-20 15-41-17](https://github.com/Shivangi2207/RISC-V/assets/140998647/4f8bdec4-025e-4220-aa3b-414d2a447152)
+
+## Lab 1: Counter and Calculator in pipeline
+Pipeline structure:
+
+
+![Screenshot from 2023-08-20 15-42-59](https://github.com/Shivangi2207/RISC-V/assets/140998647/e2fe6720-f561-430a-a39d-2c3441bf5643)
+
+Makerchip Implementation
+
+
 
 </details>
 
