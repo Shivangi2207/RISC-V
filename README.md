@@ -747,12 +747,14 @@ A single-cycle microarchitecture for a RISC-V CPU is a simple and straightforwar
 ## Lab1 : Next PC
 Pipeline structure:
 
-![Screenshot from 2023-08-20 18-57-55](https://github.com/Shivangi2207/backup/assets/140998647/5d11388e-b446-4bdd-b97e-ce5c06b0440d)
+
+![Screenshot from 2023-08-20 18-57-55](https://github.com/Shivangi2207/RISC-V/assets/140998647/5f5de9c8-a506-4b65-adc7-c7f26637659d)
+
 
 Implementation:
 
-![Screenshot from 2023-08-20 19-01-45](https://github.com/Shivangi2207/backup/assets/140998647/550d19f3-40ee-45ae-aa71-245b63b8e90b)
 
+![Screenshot from 2023-08-20 19-01-45](https://github.com/Shivangi2207/RISC-V/assets/140998647/0aac34a9-6e0e-4d06-b6b5-413d0d07d462)
 
 
 ## Lab2 : Fetch logic
