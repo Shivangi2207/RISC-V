@@ -923,7 +923,7 @@ Read-after-write hazards occur when an instruction depends on the result of a pr
 \SV
    // This code can be found in: https://github.com/stevehoover/RISC-V_MYTH_Workshop
 
- m4_include_lib(['https://raw.githubusercontent.com/BalaDhinesh/RISC-V_MYTH_Workshop/master/tlv_lib/risc-v_shell_lib.tlv'])
+ m4_include_lib(['(https://raw.githubusercontent.com/stevehoover/RISC-V_MYTH_Workshop/c1719d5b338896577b79ee76c2f443ca2a76e14f/tlv_lib/risc-v_shell_lib.tlv'])
 
 
 \SV
